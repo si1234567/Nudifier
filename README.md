@@ -9,7 +9,7 @@
 
 ## About
 
-Nudifier is a fork of the [Dreampower algorithm](https://github.com/opendreamnet/dreampower) which is itself a fork of the [DeepNude algorithm](https://github.com/stacklikemind/deepnude_official) that generates fake nudes from user-given images.
+Nudifier is a fork of the [Dreampower algorithm](https://github.com/opendreamnet/dreampower) which is itself a fork of the [DeepNude algorithm](https://github.com/stacklikemind/deepnude_official) that allows to generates fake nudes images from user-given dressed images.
 
 It consists of several algorithms that together create a fake nude from a photo.
 
