@@ -9,8 +9,8 @@ from argv.common import arg_help, arg_debug
 def init_checkpoints_sub_parser(subparsers):
     checkpoints_parser = subparsers.add_parser(
         'checkpoints',
-        description="Handle checkpoints for Nudifier.",
-        help="Handle checkpoints for Nudifier.",
+        description="Handle models checkpoints operations for Nudifier.",
+        help="Handle models checkpoints operations for Nudifier.",
         add_help=False
     )
 
