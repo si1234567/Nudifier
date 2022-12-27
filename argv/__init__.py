@@ -36,7 +36,7 @@ def run():
 
 def init_parser():
     parser = argparse.ArgumentParser(
-        description="Nudifier CLI application that allow to transform photos of people for private entertainment",
+        description="Nudifier is a CLI program that allows to turn people naked.",
         add_help=False
     )
 
