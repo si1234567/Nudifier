@@ -15,18 +15,17 @@ It consists of several algorithms that together create a fake nude from a photo.
 
 ## Features
 
-|                        | Nudifier |
-| ---------------------- | ---------- |
-| Multiplatform          | ✔️          | 
-| Command-line interface | ✔️          | 
-| NVIDIA GPUs Support    | ✔️          | 
-| Multithreading         | ✔️          | 
-| Automatic Scale        | ✔️          | 
-| GIF Support            | ✔️          | 
-| Video Support          | ✔️          | 
-| Body Customization     | ✔️          | 
-| Custom Masks           | ✔️          | 
-| Active Development     | ✔️          | 
+|                        | Nudifier   | DeepNude |
+| ---------------------- | ---------- | -------- |
+| Multiplatform          | ✔️          | ❌        |
+| Command-line interface | ✔️          | ❌        |
+| NVIDIA GPU Support     | ✔️          | ❌        |
+| Multithreading         | ✔️          | ❌        |
+| Automatic Scale        | ✔️          | ❌        |
+| GIF Support            | ✔️          | ❌        |
+| Video Support          | ✔️          | ❌        |
+| Body Customization     | ✔️          | ❌        |
+| Custom Masks           | ✔️          | ❌        |
 
 ## Requirements
 
