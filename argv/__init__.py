@@ -6,7 +6,6 @@ import sys
 from config import Config as Conf
 from argv.checkpoints import init_checkpoints_sub_parser, check_args_checkpoints_parser, set_args_checkpoints_parser
 from argv.common import arg_help, arg_debug, arg_version
-from argv.nude import init_nude_sub_parser, check_args_nude_parser, set_args_nude_parser
 from argv.gpu_info import init_gpu_info_sub_parser
 from argv.run import init_run_parser
 from argv.run.config import set_args_run_parser, check_args_run_parser
@@ -51,7 +50,6 @@ def init_parser():
     init_run_parser(subparsers)
     init_checkpoints_sub_parser(subparsers)
     init_gpu_info_sub_parser(subparsers)
-    init_nude_sub_parser(subparsers)
 
     return parser
 
@@ -73,9 +71,6 @@ def check_args_parser(parser, args):
     if args.mode == "checkpoints":
         check_args_checkpoints_parser(parser, args)
 
-    if args.mode == "nude":
-        check_args_nude_parser(parser, args)
-
     return parser
 
 
@@ -85,9 +80,6 @@ def set_args_parser(parser, args):
 
     if args.mode == "checkpoints":
         set_args_checkpoints_parser(args)
-
-    if args.mode == "nude":
-        set_args_nude_parser(args)
 
     return parser
 
