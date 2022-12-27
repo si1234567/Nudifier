@@ -20,7 +20,7 @@ def run():
     Parser.parser = init_parser()
 
     if len(sys.argv) == 1:
-        Parser.parser.print_usage()
+        Parser.parser.print_help()
         Parser.parser.exit()
 
     args = Parser.parser.parse_args()
