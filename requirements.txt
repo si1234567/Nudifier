@@ -1,0 +1,13 @@
+colorama
+coloredlogs
+imageio
+numpy
+opencv-python
+pillow
+requests
+rsa
+watchdog
+imageio-ffmpeg
+verboselogs
+torch
+torchvision
