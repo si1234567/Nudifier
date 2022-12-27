@@ -25,7 +25,7 @@ class Config:
     """Variables Configuration Class."""
 
     version = "v1.0.0"
-    checkpoints_version = "v0.1.0"
+    checkpoints_version = "v1.0.0"
     checkpoints_cdn = "https://github.com/GiladLeef/Nudifier/releases/download/1.0.0/checkpoints.zip"
 
     # experiment specifics
