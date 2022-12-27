@@ -55,7 +55,7 @@ def download(_):
 
     except Exception as e:
         Conf.log.error(e)
-        Conf.log.error("Something Gone Bad Download Downloading The Checkpoints")
+        Conf.log.error("Something went wrong downloading the checkpoints models")
         shutil.rmtree(tempdir)
         sys.exit(1)
     shutil.rmtree(tempdir)
