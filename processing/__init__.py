@@ -104,3 +104,15 @@ class SimpleProcessing(Processing):
             return ImageProcessing()
         else:
             return None
+        
+        if ext == ".mp4":
+            from processing.video import VideoProcessing
+            return VideoProcessing()
+        elif ext in ffmpeg_supported_extension():
+            from processing.video import VideoProcessing
+            return VideoProcessing()
+        elif ext in cv2_supported_extension():
+            from processing.image import ImageProcessing
+            return ImageProcessing()
+        else:
+            return None
