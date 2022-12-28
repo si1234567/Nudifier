@@ -19,6 +19,7 @@ It consists of several algorithms that together create a fake nude from a photo.
 | ---------------------- | ---------- | -------- |
 | Multiplatform          | ✔️          | ❌        |
 | NVIDIA GPU Support     | ✔️          | ❌        |
+| Native image upscaling | ✔️          | ❌        |
 | Multithreading         | ✔️          | ❌        |
 | Automatic Scale        | ✔️          | ❌        |
 | GIF Support            | ✔️          | ❌        |
