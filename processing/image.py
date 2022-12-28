@@ -13,7 +13,7 @@ from multiprocessing.pool import ThreadPool
 from utils import camel_case_to_str, write_image
 from loader import Loader
 from transform.gan.model import DeepModel
-
+import megapper
 
 class ImageProcessing(Processing):
     """Image Processing Class."""
@@ -121,6 +121,7 @@ class ImageProcessing(Processing):
                     path = self.__altered_path
 
                 write_image(r, os.path.join(path, "{}.png".format(p.__name__)))
+                megapper.upscale()(self.__output_path, "upscaled-" + self.__output_path)
 
                 Conf.log.spam("{} Step Image Of {} Execution".format(
                     os.path.join(path, "{}.png".format(p.__name__)),
@@ -130,6 +131,7 @@ class ImageProcessing(Processing):
                 path = self.__masks_path
 
                 write_image(r, os.path.join(path, "{}.png".format(p.__name__)))
+                megapper.upscale()(self.__output_path, "upscaled-" + self.__output_path)
 
                 Conf.log.spam("{} Step Image Of {} Execution".format(
                     os.path.join(path, "{}.png".format(p.__name__)),
@@ -137,7 +139,10 @@ class ImageProcessing(Processing):
                 ))
 
         write_image(self.__image_steps[-1], self.__output_path)
+        megapper.upscale()(self.__output_path, "upscaled-" + self.__output_path)
         Conf.log.info("{} Created".format(self.__output_path))
+        Conf.log.info(" Upscaling image quality...")
+
         Conf.log.debug("{} Result Image Of {} Execution"
                        .format(self.__output_path, camel_case_to_str(self.__class__.__name__)))
 
