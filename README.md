@@ -18,7 +18,6 @@ It consists of several algorithms that together create a fake nude from a photo.
 |                        | Nudifier   | DeepNude |
 | ---------------------- | ---------- | -------- |
 | Multiplatform          | ✔️          | ❌        |
-| Command-line interface | ✔️          | ❌        |
 | NVIDIA GPU Support     | ✔️          | ❌        |
 | Multithreading         | ✔️          | ❌        |
 | Automatic Scale        | ✔️          | ❌        |
