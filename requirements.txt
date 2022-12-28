@@ -11,3 +11,7 @@ imageio-ffmpeg
 verboselogs
 torch
 torchvision
+# optional packages for image upscaling:
+onnxruntime
+shapely
+pyclipper
