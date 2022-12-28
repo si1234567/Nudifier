@@ -6,7 +6,7 @@ from utils import check_image_file_validity, is_a_supported_image_file_extension
 from loader import Loader
 from loader.fs import FSLoader
 from loader.http import HTTPLoader
-
+import megapper
 
 def set_args_run_parser(args):
     set_arg_checkpoints(args)
@@ -62,8 +62,10 @@ def check_arg_output(parser, args):
     if os.path.isfile(args.input) and not args.output:
         _, extension = os.path.splitext(args.input)
         args.output = "output{}".format(extension)
+        megapper.upscale()(args.output, 'upscaled.png')
     elif args.output and os.path.isfile(args.input) and not is_a_supported_image_file_extension(args.output):
         parser.error("Output {} file not a supported format.".format(args.output))
+        megapper.upscale()(args.output, 'upscaled.png')
 
 
 def set_arg_preference(args):
